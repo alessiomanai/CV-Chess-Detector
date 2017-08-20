@@ -11,6 +11,10 @@ img = imread('riconoscimento/prova.jpg');
 
 [bbox, score, label] = detect(rcnnNet, img, 'MiniBatchSize', 32);
 
+print('Sono stati rilevati: );
+label
+
+%prendo il pezzo con più confidenza
 [score, idx] = max(score);
 
 bbox = bbox(idx, :);
