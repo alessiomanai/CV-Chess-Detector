@@ -22,7 +22,7 @@ alex = alexnet;
 layers = alex.Layers 
 
 % Modify Pre-trained Network 
-layers(23) = fullyConnectedLayer(10); % change this based on # of classes
+layers(23) = fullyConnectedLayer(9); % change this based on # of classes
 layers(25) = classificationLayer
 
 % Perform Transfer Learning
